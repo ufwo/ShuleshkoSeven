@@ -1,4 +1,12 @@
-.top_txt {
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+body {
+    background-color: #0F0F0F;
+}
+.cont_top {
     background-color: rgb(68, 68, 68);
     padding: 30px;
     border-radius: 20px 20px 0 0;
@@ -29,7 +37,6 @@
     rotate: -25deg;
     padding: 10px;
     display: inline-block;
-
 }
 
 .cont_bot {
