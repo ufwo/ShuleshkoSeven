@@ -21,6 +21,7 @@ html, body {
 html {
     font-family: "Inter";
     background-color: #0F0F0F;
+    scrollbar-color: #252525 transparent;
 }
 
 body {
