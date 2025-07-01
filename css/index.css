@@ -1,8 +1,22 @@
-/* .kanyes {
-    display: grid;
-    grid-template-columns: 55% 1fr;
+.kanyes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
 
 .kanyes > img {
-    width: 100%;
-} */
+    margin-top: 11rem;
+}
+
+.kanyes > .huge-text {
+    color: #151515;
+    font-size: 22vw;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
