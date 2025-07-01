@@ -6,7 +6,6 @@
 
 .cont_top {
     background-color: rgb(68, 68, 68);
-    padding: 30px;
     border-radius: 20px 20px 0 0;
 }
 
@@ -20,7 +19,9 @@
     max-width: 300px;
     rotate: 5deg;
 }
-
+.top_txt {
+    padding: 30px;
+}
 .txt_1 {
     background-color: white;
     font-size: 32px;
@@ -69,6 +70,26 @@
     font-weight: 900;
 }
 .bot_2 {
-    font-size: 23px;
+    font-size: 23px !important;
     color: rgba(0, 0, 0, 0.384);
+    
+}
+.midle_cont {
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.midle_cont img {
+    max-width: 250px;
+}
+.block_midle {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    justify-content: center;
+}
+.midle_cont div {
+    font-size: 32px;
 }
