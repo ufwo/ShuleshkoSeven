@@ -24,13 +24,9 @@ html {
     scrollbar-color: #252525 transparent;
 }
 
-body {
-    padding: 0 calc((100vw - 1440px) / 2);
-}
-
 header {
     background-color: #0F0F0F;
-    padding: 1rem;
+    padding: 1rem calc((100vw - 1440px) / 2) !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,4 +43,8 @@ header > .links {
 header > .links > a {
     color: #fff;
     text-decoration: none;
+}
+
+.padding {
+    padding: 0 calc((100vw - 1440px) / 2);
 }
