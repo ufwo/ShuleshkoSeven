@@ -9,10 +9,13 @@
     border-radius: 20px 20px 0 0;
 }
 
+.block_cont:hover {
+    scale: 1.1;
+}
 .block_cont {
     max-width: 400px;
     text-align: center;
-
+    transition: 0.2s ease;
 }
 
 .top_mid img {
@@ -79,9 +82,11 @@
     border-radius: 20px;
     text-align: center;
     padding: 20px;
+    transition: 0.2s ease;
 }
 .midle_cont img {
     max-width: 250px;
+    max-height: 250px;
 }
 .block_midle {
     display: flex;
@@ -92,4 +97,8 @@
 }
 .midle_cont div {
     font-size: 32px;
+}
+.midle_cont:hover {
+    scale: 1.2;
+    
 }
