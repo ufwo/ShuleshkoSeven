@@ -8,3 +8,7 @@
     src: url("../fonts/Inter-Italic-VariableFont_opsz\,wght.ttf");
     font-style: italic;
 }
+div {
+    font-family: "Inter";
+    font-style: italic;
+}
