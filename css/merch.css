@@ -65,7 +65,7 @@
 .block_rek {
     display: flex;
     gap: 5rem;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     justify-content: center;
     flex-wrap: wrap;
 }
