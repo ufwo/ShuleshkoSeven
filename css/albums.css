@@ -1,0 +1,84 @@
+li.most::after {
+    content: " ⭐";
+    color: gold;
+}
+
+li.most:hover::after {
+    content: "Лучший трек";
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 2px;
+    background: #4CAF50;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    gap: 4rem;
+    max-width: 700px;
+}
+
+.left_img {
+
+    max-width: 250px;
+    overflow: hidden;
+}
+
+.left_img img {
+    width: 250px;
+    height: auto;
+
+
+}
+
+@media (max-width: 720px) {
+    .left_img img {
+        max-width: 80%;
+        height: auto;
+    }
+    .left_txt {
+        font-size: 24px;
+    }
+    .right_list {
+        font-size: 20px;
+    }
+}
+
+.left_txt {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.content_right {
+    color: white;
+    font-size: 28px;
+    margin-top: 2.5rem;
+}
+
+.content_left {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}

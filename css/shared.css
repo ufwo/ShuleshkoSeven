@@ -11,6 +11,8 @@
 
 * {
     box-sizing: border-box;
+    font-family: "Inter";
+    font-style: italic;
 }
 
 html, body {

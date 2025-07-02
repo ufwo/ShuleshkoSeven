@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/albums.css">
+    <link rel="stylesheet" href="../css/shared.css">
+    <title>Альбомы</title>
+</head>
+
+<body>
+    <header class="padding">
+        <img src="../images/logo.png" />
+        <div class="links">
+            <a href="index.html">Главная</a>
+            <a href="#">Альбомы</a>
+            <a href="merch.html">Мерч</a>
+            <a href="pages/concert.html">Концерты</a>
+        </div>
+    </header>
+    <div class="mainContainer" id="mainContainer"></div>
+    <script>
+        const data = [
+            {
+                title: "Bully",
+                imageSrc: "../images/album.jpg",
+                tracks: ["preacher man", "beauty and the beast", "damn"],
+                mostTrackIndex: 2
+            },
+            {
+                title: "NEVER STOP",
+                imageSrc: "../images/album2.jpg",
+                tracks: ["LONELY ROADS", "KIM", "PEOPLE KILL ME", "DIDDY FREE", "REPEAT ME"],
+                mostTrackIndex: 4
+            },
+            {
+                title: "Donda",
+                imageSrc: "../images/album3.jpg",
+                tracks: ["Donda Chant", "Hurricane", "MOON", "Life Of The Party", "Off The Grid"],
+                mostTrackIndex: 3
+            },
+
+        ];
+
+        const container = document.getElementById('mainContainer'); // куда добавлять блоки
+
+        data.forEach(item => {
+            // Создаём основной контейнер .content
+            const content = document.createElement('div');
+            content.className = 'content';
+
+            // Левая часть
+            const contentLeft = document.createElement('div');
+            contentLeft.className = 'content_left';
+
+            const leftTxt = document.createElement('div');
+            leftTxt.className = 'left_txt';
+            leftTxt.textContent = item.title;
+
+            const leftImg = document.createElement('div');
+            leftImg.className = 'left_img';
+            const img = document.createElement('img');
+            img.src = item.imageSrc;
+            img.alt = '';
+            leftImg.appendChild(img);
+
+            contentLeft.appendChild(leftTxt);
+            contentLeft.appendChild(leftImg);
+
+            // Правая часть
+            const contentRight = document.createElement('div');
+            contentRight.className = 'content_right';
+
+            const ol = document.createElement('ol');
+            ol.className = 'right_list';
+
+            item.tracks.forEach((track, index) => {
+                const li = document.createElement('li');
+                li.classList.add('normal');
+                if (index === item.mostTrackIndex) {
+                    li.classList.add('most');
+                }
+                li.textContent = track;
+                ol.appendChild(li);
+            });
+
+            contentRight.appendChild(ol);
+
+            // Собираем всю структуру
+            content.appendChild(contentLeft);
+            content.appendChild(contentRight);
+            container.appendChild(content);
+        });
+    </script>
+</body>
+
+</html>
